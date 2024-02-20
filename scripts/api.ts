@@ -215,8 +215,6 @@ app.post("/pokemon/:id/favourite", (c) => {
   return c.json(pokemon);
 });
 
-console.log(`API is running on http://localhost:3001`);
-
 export const POKEMON_API_URL = "http://localhost:3001";
 
 export default {
