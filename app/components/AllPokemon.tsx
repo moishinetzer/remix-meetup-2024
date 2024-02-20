@@ -54,7 +54,6 @@ export default function AllPokemon({
             key={p.id}
             className="relative bg-cyan-800 rounded-xl p-8 text-center"
           >
-            {/* Favourite absolute top right corner star filled or unfilled */}
             <span
               className="absolute top-2 right-2 text-2xl"
               style={{ color: p.favourite ? "yellow" : "white" }}
