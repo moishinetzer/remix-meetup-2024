@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Pokemon, POKEMON_API_URL } from "scripts/api";
 
-export function SelectedPokemon({
+export default function SelectedPokemon({
   pokemon,
   clearSelectedPokemon,
 }: {

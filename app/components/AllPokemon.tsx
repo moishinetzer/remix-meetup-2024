@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Pokemon, POKEMON_API_URL } from "scripts/api";
 
-export function AllPokemon({
+export default function AllPokemon({
   setSelectedPokemon,
 }: {
   setSelectedPokemon: (p: Pokemon) => void;
@@ -64,8 +64,10 @@ export function AllPokemon({
 
             <img src={p.image} alt={p.name} className="w-64 aspect-square" />
             <h2 className="text-5xl">{p.name}</h2>
+            <div className="mt-8" />
+
             <button
-              className="mt-8 py-2 px-8 border-2 border-cyan-100 rounded-xl text-lg"
+              className="py-2 px-8 border-2 border-cyan-100 rounded-xl text-lg"
               onClick={() => setSelectedPokemon(p)}
             >
               View

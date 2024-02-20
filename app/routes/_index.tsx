@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Pokemon } from "scripts/api";
-import { AllPokemon } from "~/components/AllPokemon";
-import { SelectedPokemon } from "~/components/SelectedPokeon";
+import AllPokemon from "~/components/AllPokemon";
+import SelectedPokemon from "~/components/SelectedPokeon";
 
 export default function Index() {
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
