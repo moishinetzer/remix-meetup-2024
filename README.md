@@ -1,4 +1,48 @@
-# Welcome to Remix + Vite
+# Pokèmon API Documentation
+
+## Overview
+
+The Pokemon API allows access to a collection of Pokemon data, including retrieval of Pokemon details, listing of Pokemon, and toggling their 'favourite' status.
+
+## Base URL
+
+`http://localhost:3001`
+
+## Endpoints
+
+### 1. List Pokemon
+
+- **URL:** `/pokemon`
+- **Method:** `GET`
+- **Description:** Retrieves a paginated list of Pokemon. Optional `page` query for pagination (3 per page).
+
+### 2. Get Pokemon Details
+
+- **URL:** `/pokemon/:id`
+- **Method:** `GET`
+- **Description:** Fetches details of a specific Pokemon by ID.
+- **URL Parameters:** `id` - ID of the Pokemon.
+
+### 3. Toggle Favourite Status
+
+- **URL:** `/pokemon/:id/favourite`
+- **Method:** `POST`
+- **Description:** Toggles the 'favourite' status of a specified Pokemon.
+- **URL Parameters:** `id` - ID of the Pokemon to toggle.
+
+## Data Model
+
+### `Pokemon`
+
+- `id`: number - Unique identifier.
+- `favourite`: boolean - Favourite status.
+- `name`: string - Name.
+- `image`: string - Image URL.
+- `type`: string - Type.
+- `abilities`: string[] - Abilities.
+- `stats`: Object - Contains `hp`, `attack`, `defense`.
+
+<!-- # Welcome to Remix + Vite
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
 
@@ -37,4 +81,4 @@ If you're familiar with deploying Node applications, the built-in Remix app serv
 Make sure to deploy the output of `npm run build`
 
 - `build/server`
-- `build/client`
+- `build/client` -->

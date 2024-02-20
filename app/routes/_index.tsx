@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Pokemon } from "scripts/api";
+import { type Pokemon } from "scripts/api";
 import AllPokemon from "~/components/AllPokemon";
 import SelectedPokemon from "~/components/SelectedPokeon";
 
