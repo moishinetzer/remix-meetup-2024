@@ -16,7 +16,11 @@ export function SelectedPokemon({
 
       <div className="relative p-16 rounded-3xl bg-cyan-800">
         <h2 className="text-6xl">{pokemon.name}</h2>
-        <img src={pokemon.image} alt={pokemon.name} className="w-56 mx-auto" />
+        <img
+          src={pokemon.image}
+          alt={pokemon.name}
+          className="w-56 mx-auto aspect-square"
+        />
 
         <div className="p-6 mx-auto bg-cyan-700 rounded-xl shadow-md flex items-center space-x-4">
           <div className="mx-auto">

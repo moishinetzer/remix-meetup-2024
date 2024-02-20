@@ -36,13 +36,13 @@ export function AllPokemon({
           onClick={() => {
             setPage((page) => Math.max(page - 1, 1));
           }}
-          className="bg-cyan-700 text-cyan-100 p-2 rounded-xl border border-cyan-200 w-36"
+          className="bg-cyan-700 text-center text-cyan-100 p-2 rounded-xl border border-cyan-200 w-36"
         >
           Previous
         </button>
         <button
           onClick={() => setPage((page) => page + 1)}
-          className="bg-cyan-700 text-cyan-100 p-2 rounded-xl border border-cyan-200 w-36"
+          className="bg-cyan-700 text-center text-cyan-100 p-2 rounded-xl border border-cyan-200 w-36"
         >
           Next
         </button>
@@ -62,7 +62,7 @@ export function AllPokemon({
               ★
             </span>
 
-            <img src={p.image} alt={p.name} className="w-64" />
+            <img src={p.image} alt={p.name} className="w-64 aspect-square" />
             <h2 className="text-5xl">{p.name}</h2>
             <button
               className="mt-8 py-2 px-8 border-2 border-cyan-100 rounded-xl text-lg"
